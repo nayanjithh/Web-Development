@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8</title>
+    <style>
+        :root{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 0.8vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form{
+            display: grid;
+            justify-items: center;
+            width: fit-content;
+            padding: 10rem 1rem;
+            border-radius: 1rem;
+            background-color: black;
+            text-align: center;
+
+            span {
+                color: white;
+                font-size: 4rem;
+            }
+
+            .name {
+                background-color: black;
+                color: white;
+                border: 0.01rem solid white;
+                margin: 5rem 1rem 2rem 1rem;
+                padding: 1rem;
+                width: 30rem;
+                border-radius: 1rem;
+            }
+
+            .name::placeholder{
+                color: white;
+                font-size: 1.5rem;
+            }
+
+            label {
+                cursor: pointer;
+                color: white;
+                font-size: 2rem;
+            }
+
+            select {
+                background-color: black;
+                color: white;
+                border: 0.01rem solid white;
+                margin: 3rem 1rem 2rem 1rem;
+                padding: 1rem;
+                width: 32rem;
+                border-radius: 1rem;
+                font-size: 1.5rem;
+            }
+
+            button {
+                background-color: white;
+                color: black;
+                border-radius: 2rem;
+                padding: 1rem;
+                width: 20rem;
+                font-size: 1.5rem;
+                cursor: pointer;
+                border: 0.01rem solid white;
+            }
+
+            button:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <span>A simple form</span>
+        <input class="name" type="text" placeholder="Enter your name here"/>
+        <div>
+            <input type="radio" id="Male" name="gender"/>
+            <label for="Male">Male</label>
+        </div>
+        <div>
+            <input type="radio" id="Female" name="gender"/>
+            <label for="Female">Female</label>
+        </div>
+        <select>
+            <option>India</option>
+            <option>America</option>
+            <option>France</option>
+        </select>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
